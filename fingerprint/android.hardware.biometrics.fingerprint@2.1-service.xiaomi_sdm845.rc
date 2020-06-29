@@ -36,7 +36,6 @@ on post-fs-data
     mkdir /data/vendor/syna 0770 system system
     mkdir /data/vendor/syna/ist/ 0770 system system
     chown system system /data/vendor
-    chgrp system system /data/vendor
 
 service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
     # "class hal" causes a race condition on some devices due to files created
